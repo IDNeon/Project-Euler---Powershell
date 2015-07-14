@@ -1,0 +1,17 @@
+###Solution to Project Euler Problem #2
+
+$F = 0
+$G = 1
+$Even = 0
+$Sum = 0
+
+While($F -lt 60){
+$F = $F + $G
+$G = $F - $G
+    If($F%2 -eq 0){
+        $Even=$F
+        Write-output "$Even"
+        $Sum = $Sum + $Even
+        Write-output "$Sum"
+        }
+}
