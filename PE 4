@@ -1,0 +1,60 @@
+$x = 999
+$y = 999
+$Mul = 0
+$Hi = 0
+
+While($x -gt 0){
+    While($y -gt 0){
+    $Mul = $x * $y
+    $y = $y - 1
+
+    $Pal = $Mul
+    $Lap = $Mul -split ""
+    [array]::Reverse($Lap)
+    $A = $Lap -join ""
+    If($Pal -match $A){
+        write-output "$Pal,$A"
+        If($Pal -gt $Hi){
+            $Hi = $Pal
+            write-output "$Hi"
+            }
+    }
+    }
+        $x = $x - 1
+        $y = 999
+}
+
+
+
+
+
+
+#Experimental strings/arrays reverse.
+$Pal = "String"
+$Lap = "String" -split ""
+[array]::Reverse($lap)
+$Pal
+$Lap -join ""
+
+
+#Experimental compares
+
+$Pal = 101
+$Lap = 102 -split ""
+[array]::Reverse($Lap)
+
+$A = $Lap -join ""
+
+If($Pal -match $A) {
+    write-output "True"
+    } else {
+    write-output "False"
+    }
+
+
+#Experimental If to find highest variable
+
+        If($Hi -gt $Pal)}
+            $Hi = $Pal
+                write-output "$Hi"
+                }
