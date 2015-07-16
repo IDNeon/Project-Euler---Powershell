@@ -86,7 +86,8 @@ While($x -lt 100){
 
     $x = $x += 1
    }
-   if($a -contains $b -contains $c){
-   write-output "$a"
-}
-write-output "$s"
+   
+   $mul = compare-object $a $b -includeEqual -excludeDifferent
+
+write-output "$a"
+$mul
