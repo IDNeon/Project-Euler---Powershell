@@ -41,7 +41,7 @@ $r18 = 18
 $s19 = 19
 $t20 = 20
 
-While($x -lt 100){
+While($x -lt 10000){
     $a1 = $a1 + 1
     $b2 = $b2 + 2
     $c3 = $c3 + 3
@@ -87,6 +87,24 @@ While($x -lt 100){
     $x = $x += 1
    }
    
-   compare-object $a $b -includeEqual -excludeDifferent -PassThru -OutVariable mul
+   $mul = compare-object $a $b -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $c -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $d -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $e -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $f -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $g -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $h -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $i -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $j -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $k -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $l -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $m -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $n -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $o -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $p -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $q -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $r -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $s -includeEqual -excludeDifferent -PassThru
+   $mul = compare-object $mul $t -includeEqual -excludeDifferent -PassThru
 
-write-output "$a"
+write-output "$mul"
