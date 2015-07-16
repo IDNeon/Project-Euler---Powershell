@@ -87,7 +87,6 @@ While($x -lt 100){
     $x = $x += 1
    }
    
-   $mul = compare-object $a $b -includeEqual -excludeDifferent
+   compare-object $a $b -includeEqual -excludeDifferent -PassThru -OutVariable mul
 
 write-output "$a"
-$mul
