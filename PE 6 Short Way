@@ -1,0 +1,22 @@
+$ans1 = 0
+$ans2 = 0
+$i = 0
+$j = 0
+
+while($i -le 100){
+$ans1 = $ans1 + ($i*$i)
+$i = $i + 1
+}
+
+while($j -le 100){
+$ans2 = $ans2 + $j
+$j = $j + 1
+}
+$ans2 = $ans2 * $ans2
+
+write-output $ans1
+write-output $ans2
+
+$ans3 = $ans2 - $ans1
+
+write-output "The difference of the square of sums and the sum of squares is: " $ans3
