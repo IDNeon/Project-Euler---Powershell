@@ -1,0 +1,14 @@
+$x = 0
+while($x -le 100){
+
+$sum = $x*($x + 1)/2
+$sum2 = (2*$x + 1)*($x + 1)*$x/6
+
+$x = $x + 1
+}
+
+$sum = $sum*$sum
+
+$final = $sum - $sum2
+
+$final
