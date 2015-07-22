@@ -1,12 +1,13 @@
-    $n = 6
+$n = 6
 $m = 6
 $o = 1,1
 $p = 0
+$x = 2
 
 while($p -le 9998){
     $m = $n +1
-$a = [math]::pow(3,$n) % $m
-    if($a = 1){
+$a = [math]::pow($x,$n) % $m
+    if($a -eq 1){
         $o = $m
         $p = $p +1
         $o
@@ -16,4 +17,3 @@ $a = [math]::pow(3,$n) % $m
         }
         $n = $n +1
 }
-$o
