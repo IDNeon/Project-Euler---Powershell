@@ -18,3 +18,25 @@ $a = [math]::pow($x,$n) % $m
         $n = $n +1
 }
 
+##Trying different algorithm##
+
+$m = 1
+$o = 1,1
+$p = 1
+
+while($p -le 9998){
+    $a = $m % 2
+    $b = $m % $p
+    $m = $m + 2
+        if($a -ne 0){
+        if($b -eq 0){
+            $o = $m
+            $p = $p +1
+            $o
+        }
+        else{
+            $p = $p
+            }
+            }
+
+}
